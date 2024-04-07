@@ -1,0 +1,297 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-heading a{
+    text-decoration: none;
+    color: #1D232c;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    align-items: center;
+}
+
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color: #1D232c;
+}
+
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: #1D232c;
+}
+
+.navbar-menu-toggle{
+    display: none;
+}
+
+/* Side-navbar */
+
+.side-navbar{
+    background-color: #1D232c;
+    color: white;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    transition: 2s;
+
+}
+
+.side-navbar-link{
+    margin-bottom: 30px;
+}
+
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.side-navbar-links a:hover{
+    text-decoration: underline;
+    
+}
+
+
+
+/* Header */
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.header-button{
+    background-color: #1D232c;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    margin-top: 10px;
+    border: none;
+}
+
+.header-button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Service */
+
+.service{
+    padding: 20px;
+}
+
+.service-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .service-container-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+ }
+
+ .service-container-2 div{
+    background-color: #f2f4f7;
+    border-radius: 10px;
+ }
+
+ .new-arrival{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+
+ .new-arrival-container{
+    position: relative;
+    flex-basis: 20%;
+ }
+
+ .new-arrival button{
+    padding: 5% 10px 5% 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    color: #1D232c;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+ }
+
+ .news-letter{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+ }
+
+
+.news-letter input{
+    padding: 10px;
+    width: 80vw;
+    border: solid 3px black;
+}
+.news-letter button{
+    background-color: #1D232c;
+    color: #f2f4f7;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.footer{
+    background-color: #1D232c;
+    color: white;
+    margin-top: 20px;
+    padding: 40px;
+}
+
+
+/* Product-Section */
+
+.products-section{
+    margin-top: 20px;
+}
+
+.products-search{
+    width: 60%;
+    border-radius: 20px;
+    border: solid black 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.products-search input{
+    border: none;
+    width: 100%;
+    background-color: transparent;
+}
+
+.products-search input:focus{
+    outline: none;
+}
+
+.products{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.products-box{
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.products-box img{
+    border-radius: 5px;
+}
+
+
+
+/* Contact-Us */
+
+.contactUs{
+    
+    background-color: #1D232c;
+    color: white;
+    margin: auto;
+    padding: 5em;
+    border-radius: 10px;
+    /* display: flex;
+    flex-direction: column; */
+    width: 70%;
+    margin-top: 20px;
+    
+
+}
+
+
+.contact-container input{
+    
+    width: 100%;
+    padding: 30px;
+    border-radius: 7px;
+
+}
+
+.contact-container textarea{
+    
+    width: 100%;
+    padding: 60px;
+    border-radius: 7px;
+
+}
+
+.contact-container p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.contact-button{
+    margin-top: 5px;
+}
+.contact-button button{
+    background-color: rgb(66, 66, 164);
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+/* Media query */
+
+@media screen and (max-width:600px) {
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .header-img{
+        display: none;
+    }
+
+    .service-container-1{
+        display: none;
+        
+    }
+
+    .service-container-2{
+        flex-direction: column;
+    }
+}
